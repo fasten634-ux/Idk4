@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport optimizat pentru televizoare / PS3 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS3 Downloader & Installer</title>
+    <style>
+        /* Stiluri CSS simple compatibile cu PS3 NetFront Browser */
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #00a8ff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #cccccc;
+        }
+
+        .box {
+            background-color: #2a2a2a;
+            border: 2px solid #00a8ff;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #00a8ff;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #0080ff;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #888888;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Descărcare Fișier PS3</h1>
+        <p>Apasă pe butonul de mai jos pentru a descărca/instala pachetul de pe GitHub.</p>
+
+        <!-- 
+            Setați atributul href cu LINK-UL DIRECT DIRECT către fișierul .pkg din GitHub Releases
+            Exemplu direct link raw/release de pe GitHub:
+            https://github.com/user/repo/releases/download/v1.0/fisier.pkg
+        -->
+        <a href="https://github.com/fasten634-ux/Idk4/releases/download/44/MojoLauncher-release.apk"
+        " class="btn" id="downloadBtn">
+            DESCARCĂ .PKG
+        </a>
+
+        <p class="note">
+            * Asigură-te că ai **HEN** activat (sau CFW) pe consola ta PS3 înainte de a instala.
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        // Script simplu JS compatibil cu PS3
+        document.getElementById('downloadBtn').onclick = function() {
+            // Un mic mesaj de confirmare
+            alert("Descărcarea începe... Dacă folosești webMAN MOD, pachetul va fi procesat automat.");
+        };
+    </script>
+
+</body>
+</html>
